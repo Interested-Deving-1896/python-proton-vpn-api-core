@@ -1,53 +1,75 @@
-# Proton VPN Core API
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# python-proton-vpn-api-core
 
-The `proton-vpn-core-api` acts as a facade to the other Proton VPN components,
-exposing a uniform API to the available Proton VPN services.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/python-proton-vpn-api-core)
 
-## Development
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-Even though our CI pipelines always test and build releases using Linux
-distribution packages, you can use pip to set up your development environment.
+## Architecture
 
-### Proton package registry
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-If you didn't do it yet, to be able to pip install Proton VPN components you'll
-need to set up our internal Python package registry. You can do so running the
-command below, after replacing `{GITLAB_TOKEN`} with your
-[personal access token](https://gitlab.protontech.ch/help/user/profile/personal_access_tokens.md)
-with the scope set to `api`.
+## Install
 
-```shell
-pip config set global.index-url https://__token__:{GITLAB_TOKEN}@gitlab.protontech.ch/api/v4/groups/777/-/packages/pypi/simple
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/python-proton-vpn-api-core.git
+cd python-proton-vpn-api-core
 ```
 
-In the index URL above, `777` is the id of the current root GitLab group,
-the one containing the repositories of all our Proton VPN components.
+## Usage
 
-### Known issues
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-This component depends on the `PyGObject` python package.
+## Configuration
 
-To be able to pip install `PyGObject`, please check the required distribution packages in the
-[official documentation](https://pygobject.readthedocs.io/en/latest/devguide/dev_environ.html).
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-```shell
-sudo apt install pkg-config libdbus-1-dev libglib2.0-dev
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/python-proton-vpn-api-core`](https://github.com/Interested-Deving-1896/python-proton-vpn-api-core) and mirrored through:
+
+```
+Interested-Deving-1896/python-proton-vpn-api-core  ──►  OpenOS-Project-OSP/python-proton-vpn-api-core  ──►  OpenOS-Project-Ecosystem-OOC/python-proton-vpn-api-core
 ```
 
-### Virtual environment
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-You can create the virtual environment and install the rest of dependencies as follows:
+## Contributors
 
-```shell
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-### Tests
+## Origins
 
-You can run the tests with:
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-```shell
-pytest
-```
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/python-proton-vpn-api-core/blob/stable/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
